@@ -8,6 +8,18 @@ This is beta version of application that have no shortcuts configuration, any us
 ## User guide
 Application requires "access to control your computer". You can read about it [here](https://support.apple.com/kb/PH25774?viewlocale=en_US&locale=en_US)
 
+## Aliases:
+
+| Action | Combination |
+| ------------- |:-------------:|
+| Start/Stop controlling| Shift + CapsLock |
+| Move cursor top | I |
+| Move cursor down | K |
+| Move cursor left | J |
+| Move cursor right | L |
+| Speed Up | Shift |
+| Click | Space |
+
 ## Licence
 
 The MIT License
