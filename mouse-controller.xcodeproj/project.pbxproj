@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		879C40D35D44D5E51A108069 /* KeyEventMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4997E48E0208B38FA899 /* KeyEventMappings.swift */; };
+		879C40DF6CE2AD527FF7C461 /* CursorCoordinatesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C41BAF10A32C0F2FBE466 /* CursorCoordinatesCalculator.swift */; };
+		879C414DE129EB45064EBB63 /* ModifierMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C41E11C492D19BB37D9EE /* ModifierMapper.swift */; };
+		879C4187642280787C46DF6F /* mouse-controller.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 879C46B79859D4B73DF9BDCA /* mouse-controller.xcscheme */; };
+		879C419E3E2605A321D853A1 /* MouseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4E6BDDCA9AC9048AC8D1 /* MouseController.swift */; };
+		879C421AB226EA2175225432 /* KeyboardEventCallbackUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4721C47FC9EAB0FD1A9A /* KeyboardEventCallbackUtility.swift */; };
+		879C4221DAF312EC42691B10 /* PressedKeyHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4E39AC69DACC0B741EE1 /* PressedKeyHolder.swift */; };
+		879C422EE292020A24C490B2 /* xcschememanagement.plist in Resources */ = {isa = PBXBuildFile; fileRef = 879C4603F704F6748BA2BB37 /* xcschememanagement.plist */; };
+		879C425ED15272043000ADC6 /* MouseActionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4C8CCD7772C03CF580BA /* MouseActionFactory.swift */; };
+		879C429EA997BE603775ACB4 /* mouse-controllerUITests.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 879C498F0DD118FD2310DE5C /* mouse-controllerUITests.xcscheme */; };
+		879C42B29599E5940FE4E4CC /* MouseFromKeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4D7B0F9F4E66FAB7A642 /* MouseFromKeyboardController.swift */; };
+		879C42EBF21B67D3B664BA31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C423AC130F00D746D5D06 /* AppDelegate.swift */; };
+		879C4302EB7A8D989AC4DC9D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 879C45533D3EF240E837E67E /* README.md */; };
+		879C43240B1F849D95FA86B8 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4A9D8F8BE1CB0F7AC10E /* Modifier.swift */; };
+		879C43AD389BA0FE908AE8FF /* CursorMovementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C48E906DA1564E3831548 /* CursorMovementFactory.swift */; };
+		879C43D80EF0A1F891456411 /* MouseControllingStarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4C690B35D64EA4A63D42 /* MouseControllingStarter.swift */; };
+		879C44BC41D2EF74FFFAEE05 /* PressedKeysHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C47B846AAFE897B253044 /* PressedKeysHolder.swift */; };
+		879C45CA8C8B76DD9BC20CF2 /* contents.xcworkspacedata in Resources */ = {isa = PBXBuildFile; fileRef = 879C4233FF4520B87238FDBE /* contents.xcworkspacedata */; };
+		879C469AE291AA45E5CC4265 /* CursorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C43B60C2483DC3C203403 /* CursorUtils.swift */; };
+		879C46BA75F20C2267315B18 /* MouseActionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4D1392D64E0B13D39899 /* MouseActionMapper.swift */; };
+		879C46C4030D1C69B0FFC8B2 /* UserInterfaceState.xcuserstate in Resources */ = {isa = PBXBuildFile; fileRef = 879C4BE6CE5EADD78FAF5613 /* UserInterfaceState.xcuserstate */; };
+		879C46CD4F63BF6F20516487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879C4266B7B2E4F3CA4D2278 /* Assets.xcassets */; };
+		879C474E347586808DAE34B7 /* CursorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4683FC77016C4E7DAD6A /* CursorController.swift */; };
+		879C4774FD454423F07D2111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879C4AA2FEB65C80BAEE3750 /* Main.storyboard */; };
+		879C478B08EEA2783B32B8A8 /* EventUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C47E827BD7C1152B2998F /* EventUtils.swift */; };
+		879C4790E962FCC9AF074C41 /* FourButtonsEventToCursorMovementMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4105B7B4AE6954D3C1F3 /* FourButtonsEventToCursorMovementMapper.swift */; };
+		879C47AA17E286FA156E4DD7 /* CursorMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C45F456ECB65476626718 /* CursorMovement.swift */; };
+		879C48C1B7703B70E9EBB81C /* CursorMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4180894B14B149BD9926 /* CursorMover.swift */; };
+		879C4A396450BC50C9C73339 /* SequencePressedMouseControllingStarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C491C8FB627DFB1215441 /* SequencePressedMouseControllingStarter.swift */; };
+		879C4A3E502F6C7E2A158BAB /* EightButtonEventToCursorMovementMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4DB66116CF145D5888FC /* EightButtonEventToCursorMovementMapper.swift */; };
+		879C4AED92509C11D987F675 /* StopPropagationException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C453F0B8DF13BB998D620 /* StopPropagationException.swift */; };
+		879C4C1FEF5384D2A321F372 /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4B1CA78AF515CC4E31A8 /* ActionType.swift */; };
+		879C4C29A3F0E805519A69D3 /* StatusBarMenuFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C44057ED61CB0D404D1E2 /* StatusBarMenuFactory.swift */; };
+		879C4C358E2B3ADF7524D643 /* KeyEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C44BEC35D6D44E85837F8 /* KeyEventHandler.swift */; };
+		879C4C5849D2EE5B5DB8D078 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 879C4BC557209F1BF7BCAF6D /* .gitignore */; };
+		879C4D34FBF5246263E6FC9B /* MouseEventCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4FCB50018277952764B7 /* MouseEventCenter.swift */; };
+		879C4D4A367482D51DE3AC12 /* ModifiersPressedMouseControllerStarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4A8D0FF3BD40567E37ED /* ModifiersPressedMouseControllerStarter.swift */; };
+		879C4E37C4D3DEF112A1EFBD /* PointUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4CC864DD4444424D9283 /* PointUtils.swift */; };
+		879C4E879E21D368A88F7C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879C425C411ACC17C5CB2BAE /* Main.storyboard */; };
+		879C4F091F14C5A35846BB70 /* project.pbxproj in Resources */ = {isa = PBXBuildFile; fileRef = 879C45B58F7F5A0CCE5DEB00 /* project.pbxproj */; };
+		879C4F31D5D66CCD5FDDEC26 /* EventToCursorMovementMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C467C37DCC8447C76F4F2 /* EventToCursorMovementMapper.swift */; };
+		879C4FE4855C5B90492303F1 /* MouseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C4D475C4051DB0A868C51 /* MouseAction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		879C45097F13088D7933A8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 879C4A6D24C0EC4241B0B02C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 879C44D63ACF7B952F52DE20;
+			remoteInfo = "mouse-controller";
+		};
+		879C478BF3B4801ADD9B8BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 879C4A6D24C0EC4241B0B02C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 879C44D63ACF7B952F52DE20;
+			remoteInfo = "mouse-controller";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		879C4105B7B4AE6954D3C1F3 /* FourButtonsEventToCursorMovementMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourButtonsEventToCursorMovementMapper.swift; sourceTree = "<group>"; };
+		879C4180894B14B149BD9926 /* CursorMover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CursorMover.swift; sourceTree = "<group>"; };
+		879C41BAF10A32C0F2FBE466 /* CursorCoordinatesCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CursorCoordinatesCalculator.swift; sourceTree = "<group>"; };
+		879C41E11C492D19BB37D9EE /* ModifierMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifierMapper.swift; sourceTree = "<group>"; };
+		879C4233FF4520B87238FDBE /* contents.xcworkspacedata */ = {isa = PBXFileReference; lastKnownFileType = file.xcworkspacedata; path = contents.xcworkspacedata; sourceTree = "<group>"; };
+		879C423AC130F00D746D5D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		879C4266B7B2E4F3CA4D2278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		879C43B60C2483DC3C203403 /* CursorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CursorUtils.swift; sourceTree = "<group>"; };
+		879C44057ED61CB0D404D1E2 /* StatusBarMenuFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarMenuFactory.swift; sourceTree = "<group>"; };
+		879C44BEC35D6D44E85837F8 /* KeyEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyEventHandler.swift; sourceTree = "<group>"; };
+		879C453F0B8DF13BB998D620 /* StopPropagationException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopPropagationException.swift; sourceTree = "<group>"; };
+		879C45533D3EF240E837E67E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		879C45B58F7F5A0CCE5DEB00 /* project.pbxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.pbxproject; name = project.pbxproj; path = "mouse-controller.xcodeproj/project.pbxproj"; sourceTree = "<group>"; };
+		879C45F456ECB65476626718 /* CursorMovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CursorMovement.swift; sourceTree = "<group>"; };
+		879C4603F704F6748BA2BB37 /* xcschememanagement.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = xcschememanagement.plist; sourceTree = "<group>"; };
+		879C467C37DCC8447C76F4F2 /* EventToCursorMovementMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventToCursorMovementMapper.swift; sourceTree = "<group>"; };
+		879C4683FC77016C4E7DAD6A /* CursorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CursorController.swift; sourceTree = "<group>"; };
+		879C46B79859D4B73DF9BDCA /* mouse-controller.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = file.xcscheme; path = "mouse-controller.xcscheme"; sourceTree = "<group>"; };
+		879C4721C47FC9EAB0FD1A9A /* KeyboardEventCallbackUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardEventCallbackUtility.swift; sourceTree = "<group>"; };
+		879C47B846AAFE897B253044 /* PressedKeysHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressedKeysHolder.swift; sourceTree = "<group>"; };
+		879C47E827BD7C1152B2998F /* EventUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventUtils.swift; sourceTree = "<group>"; };
+		879C48E906DA1564E3831548 /* CursorMovementFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CursorMovementFactory.swift; sourceTree = "<group>"; };
+		879C491C8FB627DFB1215441 /* SequencePressedMouseControllingStarter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequencePressedMouseControllingStarter.swift; sourceTree = "<group>"; };
+		879C498F0DD118FD2310DE5C /* mouse-controllerUITests.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = file.xcscheme; path = "mouse-controllerUITests.xcscheme"; sourceTree = "<group>"; };
+		879C4997E48E0208B38FA899 /* KeyEventMappings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyEventMappings.swift; sourceTree = "<group>"; };
+		879C4A8D0FF3BD40567E37ED /* ModifiersPressedMouseControllerStarter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifiersPressedMouseControllerStarter.swift; sourceTree = "<group>"; };
+		879C4A9D8F8BE1CB0F7AC10E /* Modifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		879C4B0FBAA4E3F81EF18520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		879C4B1CA78AF515CC4E31A8 /* ActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionType.swift; sourceTree = "<group>"; };
+		879C4BC557209F1BF7BCAF6D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		879C4BE6CE5EADD78FAF5613 /* UserInterfaceState.xcuserstate */ = {isa = PBXFileReference; lastKnownFileType = file.xcuserstate; path = UserInterfaceState.xcuserstate; sourceTree = "<group>"; };
+		879C4C5EEB52C14E440C4586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		879C4C690B35D64EA4A63D42 /* MouseControllingStarter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseControllingStarter.swift; sourceTree = "<group>"; };
+		879C4C8CCD7772C03CF580BA /* MouseActionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseActionFactory.swift; sourceTree = "<group>"; };
+		879C4CC864DD4444424D9283 /* PointUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointUtils.swift; sourceTree = "<group>"; };
+		879C4D1392D64E0B13D39899 /* MouseActionMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseActionMapper.swift; sourceTree = "<group>"; };
+		879C4D475C4051DB0A868C51 /* MouseAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseAction.swift; sourceTree = "<group>"; };
+		879C4D7B0F9F4E66FAB7A642 /* MouseFromKeyboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseFromKeyboardController.swift; sourceTree = "<group>"; };
+		879C4DB66116CF145D5888FC /* EightButtonEventToCursorMovementMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightButtonEventToCursorMovementMapper.swift; sourceTree = "<group>"; };
+		879C4E39AC69DACC0B741EE1 /* PressedKeyHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressedKeyHolder.swift; sourceTree = "<group>"; };
+		879C4E6BDDCA9AC9048AC8D1 /* MouseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseController.swift; sourceTree = "<group>"; };
+		879C4F18E1779430615F3D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		879C4FCB50018277952764B7 /* MouseEventCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseEventCenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		879C4832FC079CF7E96A531A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		879C48C9DC2009DF1165D058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		879C4CB8F1E84C7905F98138 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		879C4019E67D989385C1BB94 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				879C44057ED61CB0D404D1E2 /* StatusBarMenuFactory.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		879C40D89CD6F81EA473B370 /* mouse */ = {
+			isa = PBXGroup;
+			children = (
+				879C4B1CA78AF515CC4E31A8 /* ActionType.swift */,
+				879C4D475C4051DB0A868C51 /* MouseAction.swift */,
+				879C4E6BDDCA9AC9048AC8D1 /* MouseController.swift */,
+				879C4D1392D64E0B13D39899 /* MouseActionMapper.swift */,
+				879C4C8CCD7772C03CF580BA /* MouseActionFactory.swift */,
+			);
+			path = mouse;
+			sourceTree = "<group>";
+		};
+		879C40F5665C8C23041A984A /* xcschemes */ = {
+			isa = PBXGroup;
+			children = (
+				879C4603F704F6748BA2BB37 /* xcschememanagement.plist */,
+				879C46B79859D4B73DF9BDCA /* mouse-controller.xcscheme */,
+				879C498F0DD118FD2310DE5C /* mouse-controllerUITests.xcscheme */,
+			);
+			path = xcschemes;
+			sourceTree = "<group>";
+		};
+		879C410AD76FBEB8C78E2F03 /* mouse-controller */ = {
+			isa = PBXGroup;
+			children = (
+				879C4F18E1779430615F3D4B /* Info.plist */,
+				879C4266B7B2E4F3CA4D2278 /* Assets.xcassets */,
+				879C423AC130F00D746D5D06 /* AppDelegate.swift */,
+				879C425C411ACC17C5CB2BAE /* Main.storyboard */,
+				879C4019E67D989385C1BB94 /* ui */,
+				879C40D89CD6F81EA473B370 /* mouse */,
+				879C4BED7068F62F1EECE467 /* modifier */,
+				879C4A804C11D65722E09E8C /* keyboard */,
+				879C4848EE5AB774A4CD9F3C /* event */,
+				879C41A8ED8704F893D431DD /* cursor */,
+				879C4EDBF627B23D250ACDEA /* controlling_starter */,
+				879C4CF6C825A54ED1B59685 /* Base.lproj */,
+			);
+			path = "mouse-controller";
+			sourceTree = "<group>";
+		};
+		879C41A8ED8704F893D431DD /* cursor */ = {
+			isa = PBXGroup;
+			children = (
+				879C460992D9868C5772C28D /* mappings */,
+				879C4CC864DD4444424D9283 /* PointUtils.swift */,
+				879C4180894B14B149BD9926 /* CursorMover.swift */,
+				879C43B60C2483DC3C203403 /* CursorUtils.swift */,
+				879C45F456ECB65476626718 /* CursorMovement.swift */,
+				879C4683FC77016C4E7DAD6A /* CursorController.swift */,
+				879C48E906DA1564E3831548 /* CursorMovementFactory.swift */,
+				879C41BAF10A32C0F2FBE466 /* CursorCoordinatesCalculator.swift */,
+			);
+			path = cursor;
+			sourceTree = "<group>";
+		};
+		879C45B30BAAFF543C0BD0FE /* xcuserdata */ = {
+			isa = PBXGroup;
+			children = (
+				879C4FCFB94FDC4DCC6824E4 /* Frost_Fox.xcuserdatad */,
+			);
+			path = xcuserdata;
+			sourceTree = "<group>";
+		};
+		879C460992D9868C5772C28D /* mappings */ = {
+			isa = PBXGroup;
+			children = (
+				879C467C37DCC8447C76F4F2 /* EventToCursorMovementMapper.swift */,
+				879C4DB66116CF145D5888FC /* EightButtonEventToCursorMovementMapper.swift */,
+				879C4105B7B4AE6954D3C1F3 /* FourButtonsEventToCursorMovementMapper.swift */,
+			);
+			path = mappings;
+			sourceTree = "<group>";
+		};
+		879C4848EE5AB774A4CD9F3C /* event */ = {
+			isa = PBXGroup;
+			children = (
+				879C47E827BD7C1152B2998F /* EventUtils.swift */,
+				879C4997E48E0208B38FA899 /* KeyEventMappings.swift */,
+				879C4FCB50018277952764B7 /* MouseEventCenter.swift */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
+		879C4891178EB06B4AED9C43 /* xcuserdata */ = {
+			isa = PBXGroup;
+			children = (
+				879C4AFDBCCA6427ACFDE16A /* Frost_Fox.xcuserdatad */,
+			);
+			name = xcuserdata;
+			path = "mouse-controller.xcodeproj/xcuserdata";
+			sourceTree = "<group>";
+		};
+		879C4A804C11D65722E09E8C /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				879C44BEC35D6D44E85837F8 /* KeyEventHandler.swift */,
+				879C4E39AC69DACC0B741EE1 /* PressedKeyHolder.swift */,
+				879C47B846AAFE897B253044 /* PressedKeysHolder.swift */,
+				879C453F0B8DF13BB998D620 /* StopPropagationException.swift */,
+				879C4D7B0F9F4E66FAB7A642 /* MouseFromKeyboardController.swift */,
+				879C4721C47FC9EAB0FD1A9A /* KeyboardEventCallbackUtility.swift */,
+			);
+			path = keyboard;
+			sourceTree = "<group>";
+		};
+		879C4AEFDC918A2293D01A85 /* project.xcworkspace */ = {
+			isa = PBXGroup;
+			children = (
+				879C45B30BAAFF543C0BD0FE /* xcuserdata */,
+				879C4233FF4520B87238FDBE /* contents.xcworkspacedata */,
+			);
+			name = project.xcworkspace;
+			path = "mouse-controller.xcodeproj/project.xcworkspace";
+			sourceTree = "<group>";
+		};
+		879C4AFDBCCA6427ACFDE16A /* Frost_Fox.xcuserdatad */ = {
+			isa = PBXGroup;
+			children = (
+				879C40F5665C8C23041A984A /* xcschemes */,
+			);
+			path = Frost_Fox.xcuserdatad;
+			sourceTree = "<group>";
+		};
+		879C4B9EB64CC6FC87348711 = {
+			isa = PBXGroup;
+			children = (
+				879C410AD76FBEB8C78E2F03 /* mouse-controller */,
+				879C4891178EB06B4AED9C43 /* xcuserdata */,
+				879C4AEFDC918A2293D01A85 /* project.xcworkspace */,
+				879C45B58F7F5A0CCE5DEB00 /* project.pbxproj */,
+				879C4BC557209F1BF7BCAF6D /* .gitignore */,
+				879C45533D3EF240E837E67E /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		879C4BED7068F62F1EECE467 /* modifier */ = {
+			isa = PBXGroup;
+			children = (
+				879C4A9D8F8BE1CB0F7AC10E /* Modifier.swift */,
+				879C41E11C492D19BB37D9EE /* ModifierMapper.swift */,
+			);
+			path = modifier;
+			sourceTree = "<group>";
+		};
+		879C4CF6C825A54ED1B59685 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				879C4AA2FEB65C80BAEE3750 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		879C4EDBF627B23D250ACDEA /* controlling_starter */ = {
+			isa = PBXGroup;
+			children = (
+				879C4C690B35D64EA4A63D42 /* MouseControllingStarter.swift */,
+				879C4A8D0FF3BD40567E37ED /* ModifiersPressedMouseControllerStarter.swift */,
+				879C491C8FB627DFB1215441 /* SequencePressedMouseControllingStarter.swift */,
+			);
+			path = controlling_starter;
+			sourceTree = "<group>";
+		};
+		879C4FCFB94FDC4DCC6824E4 /* Frost_Fox.xcuserdatad */ = {
+			isa = PBXGroup;
+			children = (
+				879C4BE6CE5EADD78FAF5613 /* UserInterfaceState.xcuserstate */,
+			);
+			path = Frost_Fox.xcuserdatad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		879C44D63ACF7B952F52DE20 /* mouse-controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 879C4DF385C62E65F9612BFD /* Build configuration list for PBXNativeTarget "mouse-controller" */;
+			buildPhases = (
+				879C4886DA025C92F45098C7 /* Sources */,
+				879C4CB8F1E84C7905F98138 /* Frameworks */,
+				879C4795305156C4A69BD25D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mouse-controller";
+			productName = "mouse-controller";
+			productType = "com.apple.product-type.application";
+		};
+		879C496B9488F0817F61A3F9 /* mouse-controllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 879C499E831F0729DEAE5D36 /* Build configuration list for PBXNativeTarget "mouse-controllerTests" */;
+			buildPhases = (
+				879C47999523A047921941AD /* Sources */,
+				879C48C9DC2009DF1165D058 /* Frameworks */,
+				879C491CD65FB0AB0912AA93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				879C42A5DE2B427EC27AF79C /* PBXTargetDependency */,
+			);
+			name = "mouse-controllerTests";
+			productName = "mouse-controllerTests";
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		879C4EA7C54056582A5D59D8 /* mouse-controllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 879C4745D0AA105518033E9D /* Build configuration list for PBXNativeTarget "mouse-controllerUITests" */;
+			buildPhases = (
+				879C48EC67A0117FE8A7C1AD /* Sources */,
+				879C4832FC079CF7E96A531A /* Frameworks */,
+				879C45A7E8B798821507ED55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				879C488E7915772215128408 /* PBXTargetDependency */,
+			);
+			name = "mouse-controllerUITests";
+			productName = "mouse-controllerUITests";
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		879C4A6D24C0EC4241B0B02C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Frost_Fox;
+			};
+			buildConfigurationList = 879C446F465BBB601E7D2BA7 /* Build configuration list for PBXProject "mouse-controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 879C4B9EB64CC6FC87348711;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				879C44D63ACF7B952F52DE20 /* mouse-controller */,
+				879C496B9488F0817F61A3F9 /* mouse-controllerTests */,
+				879C4EA7C54056582A5D59D8 /* mouse-controllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		879C45A7E8B798821507ED55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		879C4795305156C4A69BD25D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879C46CD4F63BF6F20516487 /* Assets.xcassets in Resources */,
+				879C4E879E21D368A88F7C96 /* Main.storyboard in Resources */,
+				879C4774FD454423F07D2111 /* Main.storyboard in Resources */,
+				879C422EE292020A24C490B2 /* xcschememanagement.plist in Resources */,
+				879C4187642280787C46DF6F /* mouse-controller.xcscheme in Resources */,
+				879C429EA997BE603775ACB4 /* mouse-controllerUITests.xcscheme in Resources */,
+				879C46C4030D1C69B0FFC8B2 /* UserInterfaceState.xcuserstate in Resources */,
+				879C45CA8C8B76DD9BC20CF2 /* contents.xcworkspacedata in Resources */,
+				879C4F091F14C5A35846BB70 /* project.pbxproj in Resources */,
+				879C4C5849D2EE5B5DB8D078 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		879C491CD65FB0AB0912AA93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		879C47999523A047921941AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		879C4886DA025C92F45098C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879C42EBF21B67D3B664BA31 /* AppDelegate.swift in Sources */,
+				879C4C29A3F0E805519A69D3 /* StatusBarMenuFactory.swift in Sources */,
+				879C4C1FEF5384D2A321F372 /* ActionType.swift in Sources */,
+				879C4FE4855C5B90492303F1 /* MouseAction.swift in Sources */,
+				879C419E3E2605A321D853A1 /* MouseController.swift in Sources */,
+				879C46BA75F20C2267315B18 /* MouseActionMapper.swift in Sources */,
+				879C425ED15272043000ADC6 /* MouseActionFactory.swift in Sources */,
+				879C43240B1F849D95FA86B8 /* Modifier.swift in Sources */,
+				879C414DE129EB45064EBB63 /* ModifierMapper.swift in Sources */,
+				879C4C358E2B3ADF7524D643 /* KeyEventHandler.swift in Sources */,
+				879C4221DAF312EC42691B10 /* PressedKeyHolder.swift in Sources */,
+				879C44BC41D2EF74FFFAEE05 /* PressedKeysHolder.swift in Sources */,
+				879C4AED92509C11D987F675 /* StopPropagationException.swift in Sources */,
+				879C42B29599E5940FE4E4CC /* MouseFromKeyboardController.swift in Sources */,
+				879C421AB226EA2175225432 /* KeyboardEventCallbackUtility.swift in Sources */,
+				879C478B08EEA2783B32B8A8 /* EventUtils.swift in Sources */,
+				879C40D35D44D5E51A108069 /* KeyEventMappings.swift in Sources */,
+				879C4D34FBF5246263E6FC9B /* MouseEventCenter.swift in Sources */,
+				879C4F31D5D66CCD5FDDEC26 /* EventToCursorMovementMapper.swift in Sources */,
+				879C4A3E502F6C7E2A158BAB /* EightButtonEventToCursorMovementMapper.swift in Sources */,
+				879C4790E962FCC9AF074C41 /* FourButtonsEventToCursorMovementMapper.swift in Sources */,
+				879C4E37C4D3DEF112A1EFBD /* PointUtils.swift in Sources */,
+				879C48C1B7703B70E9EBB81C /* CursorMover.swift in Sources */,
+				879C469AE291AA45E5CC4265 /* CursorUtils.swift in Sources */,
+				879C47AA17E286FA156E4DD7 /* CursorMovement.swift in Sources */,
+				879C474E347586808DAE34B7 /* CursorController.swift in Sources */,
+				879C43AD389BA0FE908AE8FF /* CursorMovementFactory.swift in Sources */,
+				879C40DF6CE2AD527FF7C461 /* CursorCoordinatesCalculator.swift in Sources */,
+				879C43D80EF0A1F891456411 /* MouseControllingStarter.swift in Sources */,
+				879C4D4A367482D51DE3AC12 /* ModifiersPressedMouseControllerStarter.swift in Sources */,
+				879C4A396450BC50C9C73339 /* SequencePressedMouseControllingStarter.swift in Sources */,
+				879C4302EB7A8D989AC4DC9D /* README.md in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		879C48EC67A0117FE8A7C1AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		879C42A5DE2B427EC27AF79C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 879C44D63ACF7B952F52DE20 /* mouse-controller */;
+			targetProxy = 879C478BF3B4801ADD9B8BBA /* PBXContainerItemProxy */;
+		};
+		879C488E7915772215128408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 879C44D63ACF7B952F52DE20 /* mouse-controller */;
+			targetProxy = 879C45097F13088D7933A8D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		879C425C411ACC17C5CB2BAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				879C4B0FBAA4E3F81EF18520 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		879C4AA2FEB65C80BAEE3750 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				879C4C5EEB52C14E440C4586 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		879C41D3831169050E54DFF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mouse-controllerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frost-fox.mouse-controllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "mouse-controller";
+			};
+			name = Debug;
+		};
+		879C42E26C590609B1971957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mouse-controller.app/Contents/MacOS/mouse-controller";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mouse-controllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frost-fox.mouse-controllerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		879C457E4A4C58C547D76920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mouse-controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frost-fox.mouse-controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		879C458F3CC36C4304400683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		879C4906EFE6179AEE3D3F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		879C4DACD9F1C90F43A16B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mouse-controller.app/Contents/MacOS/mouse-controller";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mouse-controllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frost-fox.mouse-controllerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		879C4DDD83475F4E2D59017B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mouse-controllerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frost-fox.mouse-controllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "mouse-controller";
+			};
+			name = Release;
+		};
+		879C4E7D8216F79155AA0A1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mouse-controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frost-fox.mouse-controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		879C446F465BBB601E7D2BA7 /* Build configuration list for PBXProject "mouse-controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				879C4906EFE6179AEE3D3F2B /* Debug */,
+				879C458F3CC36C4304400683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		879C4745D0AA105518033E9D /* Build configuration list for PBXNativeTarget "mouse-controllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				879C41D3831169050E54DFF7 /* Debug */,
+				879C4DDD83475F4E2D59017B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		879C499E831F0729DEAE5D36 /* Build configuration list for PBXNativeTarget "mouse-controllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				879C42E26C590609B1971957 /* Debug */,
+				879C4DACD9F1C90F43A16B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		879C4DF385C62E65F9612BFD /* Build configuration list for PBXNativeTarget "mouse-controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				879C4E7D8216F79155AA0A1E /* Debug */,
+				879C457E4A4C58C547D76920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 879C4A6D24C0EC4241B0B02C /* Project object */;
+}
